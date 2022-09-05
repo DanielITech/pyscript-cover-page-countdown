@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <title>PyPWA Weather</title>
+
+    <link rel="manifest" href="./static/manifest.json">
+
+    <link rel="stylesheet" href="./static/pyscript/pyscript.css"/>
+    <script defer src="./static/pyscript/pyscript.js"></script>
+    <py-config>
+        - autoclose_loader: true
+        - runtimes:
+            -
+                src: "./static/pyodide/pyodide.js"
+                name: pyodide-0.20
+                lang: python
+    </py-config>
+    <!--<py-env>
+        - paths:
+            - /static/python/client.py
+            - /static/python/weather_api.py
+    </py-env>-->
+</head>
+<body id="the_body">
+
+<!--<py-script src="/static/python/client.py"></py-script>
+<script src="/static/js/pwa-scaffold.js"></script>-->
+</body>
+</html>
